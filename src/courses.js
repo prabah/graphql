@@ -23,7 +23,7 @@ const Courses = () => (
             if (error) return <p>Error :(</p>;
             return data.allCourses.map(course  => (
                 <div key={course.id}>
-                    <p>{`${course.title}`}</p>
+                    {/* <p>{`${course.title}`}</p> */}
                    {/* <Course  props = { course } /> */}
                 </div>
             ));
