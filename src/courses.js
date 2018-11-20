@@ -22,9 +22,10 @@ const Courses = () => (
             if (loading) return <p>Loading...</p>;
             if (error) return <p>Error :(</p>;
             return data.allCourses.map(course  => (
+                // console.log(course.id)
                 <div key={course.id}>
                     {/* <p>{`${course.title}`}</p> */}
-                   {/* <Course  props = { course } /> */}
+                    <Course props = { course } /> 
                 </div>
             ));
 
